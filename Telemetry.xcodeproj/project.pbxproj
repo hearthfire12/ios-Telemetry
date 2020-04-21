@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,22 @@
 		CD7660762448CA8A00D825A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7660752448CA8A00D825A3 /* Assets.xcassets */; };
 		CD7660792448CA8A00D825A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7660782448CA8A00D825A3 /* Preview Assets.xcassets */; };
 		CD76607C2448CA8A00D825A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD76607A2448CA8A00D825A3 /* LaunchScreen.storyboard */; };
+		CD7660B92448CBDD00D825A3 /* MapControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7660B22448CBDD00D825A3 /* MapControl.swift */; };
+		CD7660BA2448CBDD00D825A3 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7660B32448CBDD00D825A3 /* Arrow.swift */; };
+		CD7660BB2448CBDD00D825A3 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7660B52448CBDD00D825A3 /* DoubleExtensions.swift */; };
+		CD7660BC2448CBDD00D825A3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7660B72448CBDD00D825A3 /* Session.swift */; };
+		CD7660BD2448CBDD00D825A3 /* TelemetryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7660B82448CBDD00D825A3 /* TelemetryRepository.swift */; };
+		CD7660C02448D1A600D825A3 /* MongoKitten in Frameworks */ = {isa = PBXBuildFile; productRef = CD7660BF2448D1A600D825A3 /* MongoKitten */; };
+		CDAEDFC7244C7C820086EBD0 /* SessionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAEDFC6244C7C820086EBD0 /* SessionMap.swift */; };
+		CDAEDFC9244C7CC80086EBD0 /* SessionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAEDFC8244C7CC80086EBD0 /* SessionsDataSource.swift */; };
+		CDAEDFCB244C7CF60086EBD0 /* AccelerationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAEDFCA244C7CF60086EBD0 /* AccelerationDataSource.swift */; };
+		CDAEDFCD244C7D7F0086EBD0 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAEDFCC244C7D7F0086EBD0 /* UIImageViewExtensions.swift */; };
+		CDAEDFCF244C80BE0086EBD0 /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAEDFCE244C80BE0086EBD0 /* BindingView.swift */; };
+		CDCC5ACE244E2B6F00AECC66 /* TelemetryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC5ACD244E2B6F00AECC66 /* TelemetryView.swift */; };
+		CDCC5AD1244E381E00AECC66 /* RecordingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC5AD0244E381E00AECC66 /* RecordingTabView.swift */; };
+		CDD455F9244EE2DB0056A83D /* MapTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD455F8244EE2DB0056A83D /* MapTabView.swift */; };
+		CDE60555244ECA0C0000E3B4 /* ResolverRegistering.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE60554244ECA0C0000E3B4 /* ResolverRegistering.swift */; };
+		CDE60558244ECABD0000E3B4 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = CDE60557244ECABD0000E3B4 /* Resolver */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +40,20 @@
 		CD7660782448CA8A00D825A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD76607B2448CA8A00D825A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD76607D2448CA8A00D825A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7660B22448CBDD00D825A3 /* MapControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapControl.swift; sourceTree = "<group>"; };
+		CD7660B32448CBDD00D825A3 /* Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		CD7660B52448CBDD00D825A3 /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		CD7660B72448CBDD00D825A3 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		CD7660B82448CBDD00D825A3 /* TelemetryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelemetryRepository.swift; sourceTree = "<group>"; };
+		CDAEDFC6244C7C820086EBD0 /* SessionMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMap.swift; sourceTree = "<group>"; };
+		CDAEDFC8244C7CC80086EBD0 /* SessionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsDataSource.swift; sourceTree = "<group>"; };
+		CDAEDFCA244C7CF60086EBD0 /* AccelerationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerationDataSource.swift; sourceTree = "<group>"; };
+		CDAEDFCC244C7D7F0086EBD0 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		CDAEDFCE244C80BE0086EBD0 /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
+		CDCC5ACD244E2B6F00AECC66 /* TelemetryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryView.swift; sourceTree = "<group>"; };
+		CDCC5AD0244E381E00AECC66 /* RecordingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingTabView.swift; sourceTree = "<group>"; };
+		CDD455F8244EE2DB0056A83D /* MapTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabView.swift; sourceTree = "<group>"; };
+		CDE60554244ECA0C0000E3B4 /* ResolverRegistering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverRegistering.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE60558244ECABD0000E3B4 /* Resolver in Frameworks */,
+				CD7660C02448D1A600D825A3 /* MongoKitten in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +72,10 @@
 		CD7660632448CA8800D825A3 = {
 			isa = PBXGroup;
 			children = (
+				CDE60553244EC9F50000E3B4 /* DI */,
+				CD7660B12448CBDD00D825A3 /* Controls */,
+				CD7660B42448CBDD00D825A3 /* Extensions */,
+				CD7660B62448CBDD00D825A3 /* Services */,
 				CD76606E2448CA8800D825A3 /* Telemetry */,
 				CD76606D2448CA8800D825A3 /* Products */,
 			);
@@ -56,9 +92,9 @@
 		CD76606E2448CA8800D825A3 /* Telemetry */ = {
 			isa = PBXGroup;
 			children = (
+				CDCC5ACF244E37E200AECC66 /* Views */,
 				CD76606F2448CA8800D825A3 /* AppDelegate.swift */,
 				CD7660712448CA8800D825A3 /* SceneDelegate.swift */,
-				CD7660732448CA8800D825A3 /* ContentView.swift */,
 				CD7660752448CA8A00D825A3 /* Assets.xcassets */,
 				CD76607A2448CA8A00D825A3 /* LaunchScreen.storyboard */,
 				CD76607D2448CA8A00D825A3 /* Info.plist */,
@@ -73,6 +109,56 @@
 				CD7660782448CA8A00D825A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD7660B12448CBDD00D825A3 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				CD7660B22448CBDD00D825A3 /* MapControl.swift */,
+				CD7660B32448CBDD00D825A3 /* Arrow.swift */,
+				CDAEDFC6244C7C820086EBD0 /* SessionMap.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		CD7660B42448CBDD00D825A3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD7660B52448CBDD00D825A3 /* DoubleExtensions.swift */,
+				CDAEDFCC244C7D7F0086EBD0 /* UIImageViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD7660B62448CBDD00D825A3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD7660B72448CBDD00D825A3 /* Session.swift */,
+				CD7660B82448CBDD00D825A3 /* TelemetryRepository.swift */,
+				CDAEDFC8244C7CC80086EBD0 /* SessionsDataSource.swift */,
+				CDAEDFCA244C7CF60086EBD0 /* AccelerationDataSource.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CDCC5ACF244E37E200AECC66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD7660732448CA8800D825A3 /* ContentView.swift */,
+				CDAEDFCE244C80BE0086EBD0 /* BindingView.swift */,
+				CDCC5ACD244E2B6F00AECC66 /* TelemetryView.swift */,
+				CDCC5AD0244E381E00AECC66 /* RecordingTabView.swift */,
+				CDD455F8244EE2DB0056A83D /* MapTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDE60553244EC9F50000E3B4 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CDE60554244ECA0C0000E3B4 /* ResolverRegistering.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +177,10 @@
 			dependencies = (
 			);
 			name = Telemetry;
+			packageProductDependencies = (
+				CD7660BF2448D1A600D825A3 /* MongoKitten */,
+				CDE60557244ECABD0000E3B4 /* Resolver */,
+			);
 			productName = Telemetry;
 			productReference = CD76606C2448CA8800D825A3 /* Telemetry.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +209,10 @@
 				Base,
 			);
 			mainGroup = CD7660632448CA8800D825A3;
+			packageReferences = (
+				CD7660BE2448D1A600D825A3 /* XCRemoteSwiftPackageReference "MongoKitten" */,
+				CDE60556244ECABD0000E3B4 /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = CD76606D2448CA8800D825A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,9 +240,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD455F9244EE2DB0056A83D /* MapTabView.swift in Sources */,
+				CD7660BC2448CBDD00D825A3 /* Session.swift in Sources */,
+				CDAEDFC9244C7CC80086EBD0 /* SessionsDataSource.swift in Sources */,
 				CD7660702448CA8800D825A3 /* AppDelegate.swift in Sources */,
 				CD7660722448CA8800D825A3 /* SceneDelegate.swift in Sources */,
+				CDE60555244ECA0C0000E3B4 /* ResolverRegistering.swift in Sources */,
+				CDCC5AD1244E381E00AECC66 /* RecordingTabView.swift in Sources */,
+				CDAEDFCD244C7D7F0086EBD0 /* UIImageViewExtensions.swift in Sources */,
+				CD7660B92448CBDD00D825A3 /* MapControl.swift in Sources */,
+				CDAEDFC7244C7C820086EBD0 /* SessionMap.swift in Sources */,
+				CD7660BA2448CBDD00D825A3 /* Arrow.swift in Sources */,
+				CDAEDFCF244C80BE0086EBD0 /* BindingView.swift in Sources */,
+				CDAEDFCB244C7CF60086EBD0 /* AccelerationDataSource.swift in Sources */,
+				CD7660BB2448CBDD00D825A3 /* DoubleExtensions.swift in Sources */,
 				CD7660742448CA8800D825A3 /* ContentView.swift in Sources */,
+				CD7660BD2448CBDD00D825A3 /* TelemetryRepository.swift in Sources */,
+				CDCC5ACE244E2B6F00AECC66 /* TelemetryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +397,7 @@
 				DEVELOPMENT_TEAM = QTB32FJ7E6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Telemetry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +418,7 @@
 				DEVELOPMENT_TEAM = QTB32FJ7E6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Telemetry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,6 +452,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD7660BE2448D1A600D825A3 /* XCRemoteSwiftPackageReference "MongoKitten" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OpenKitten/MongoKitten";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.3;
+			};
+		};
+		CDE60556244ECABD0000E3B4 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD7660BF2448D1A600D825A3 /* MongoKitten */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD7660BE2448D1A600D825A3 /* XCRemoteSwiftPackageReference "MongoKitten" */;
+			productName = MongoKitten;
+		};
+		CDE60557244ECABD0000E3B4 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDE60556244ECABD0000E3B4 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD7660642448CA8800D825A3 /* Project object */;
 }
