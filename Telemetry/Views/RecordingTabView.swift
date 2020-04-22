@@ -14,10 +14,7 @@ import Resolver
 struct RecordingTabView: View {
     @State var session:Session = Session()
     @State var isRecording = false
-    @State var acceleration = CMAcceleration()
-    @Injected var motionManager: CMMotionManager
-    @Injected var repo: TelemetryRepository
-    
+    @ObservedObject var accelerationDataSource: AccelerationDataSource
     
     var body: some View {
         NavigationView {
@@ -47,15 +44,15 @@ struct RecordingTabView: View {
                 Section {
                     HStack {
                         Text("X:")
-                        Text(String(format: "%.2f", acceleration.x))
+                        Text(String(format: "%.2f", accelerationDataSource.accel.x))
                     }
                     HStack {
                         Text("Y:")
-                        Text(String(format: "%.2f", acceleration.y))
+                        Text(String(format: "%.2f", accelerationDataSource.accel.y))
                     }
                     HStack {
                         Text("Z:")
-                        Text(String(format: "%.2f", acceleration.z))
+                        Text(String(format: "%.2f", accelerationDataSource.accel.z))
                     }
                 }
             }
@@ -64,30 +61,16 @@ struct RecordingTabView: View {
     }
     
     func onStartRecordingClick() {
-        self.repo.createSession(session)
-        motionManager.accelerometerUpdateInterval = 0.2
-        motionManager.startAccelerometerUpdates(to: OperationQueue.current ?? OperationQueue()) { (accelDataOrNil, errorOrNil) in
-            if let accelData = accelDataOrNil {
-                self.acceleration = accelData.acceleration
-                self.repo.updateSession(sessionId: self.session.id,
-                                        x: self.acceleration.x,
-                                        y: self.acceleration.y,
-                                        z: self.acceleration.y)
-            }
-            
-            if let error = errorOrNil {
-                print(error.localizedDescription)
-            }
-        }
+        accelerationDataSource.start()
     }
     
     func onStopRecordingClick() {
-        motionManager.stopAccelerometerUpdates()
+        accelerationDataSource.stop()
     }
 }
 
 struct RecordingTabView_Previews: PreviewProvider {
     static var previews: some View {
-        RecordingTabView()
+        RecordingTabView(accelerationDataSource: .moq())
     }
 }

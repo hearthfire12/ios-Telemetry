@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD41AB60244EF05500E1A5E0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41AB5F244EF05500E1A5E0 /* MapView.swift */; };
 		CD7660702448CA8800D825A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76606F2448CA8800D825A3 /* AppDelegate.swift */; };
 		CD7660722448CA8800D825A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7660712448CA8800D825A3 /* SceneDelegate.swift */; };
-		CD7660742448CA8800D825A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7660732448CA8800D825A3 /* ContentView.swift */; };
 		CD7660762448CA8A00D825A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7660752448CA8A00D825A3 /* Assets.xcassets */; };
 		CD7660792448CA8A00D825A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7660782448CA8A00D825A3 /* Preview Assets.xcassets */; };
 		CD76607C2448CA8A00D825A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD76607A2448CA8A00D825A3 /* LaunchScreen.storyboard */; };
@@ -32,10 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD41AB5F244EF05500E1A5E0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CD76606C2448CA8800D825A3 /* Telemetry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telemetry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD76606F2448CA8800D825A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7660712448CA8800D825A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD7660732448CA8800D825A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD7660752448CA8A00D825A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD7660782448CA8A00D825A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD76607B2448CA8A00D825A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,11 +144,11 @@
 		CDCC5ACF244E37E200AECC66 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CD7660732448CA8800D825A3 /* ContentView.swift */,
 				CDAEDFCE244C80BE0086EBD0 /* BindingView.swift */,
 				CDCC5ACD244E2B6F00AECC66 /* TelemetryView.swift */,
 				CDCC5AD0244E381E00AECC66 /* RecordingTabView.swift */,
 				CDD455F8244EE2DB0056A83D /* MapTabView.swift */,
+				CD41AB5F244EF05500E1A5E0 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,12 +249,12 @@
 				CDCC5AD1244E381E00AECC66 /* RecordingTabView.swift in Sources */,
 				CDAEDFCD244C7D7F0086EBD0 /* UIImageViewExtensions.swift in Sources */,
 				CD7660B92448CBDD00D825A3 /* MapControl.swift in Sources */,
+				CD41AB60244EF05500E1A5E0 /* MapView.swift in Sources */,
 				CDAEDFC7244C7C820086EBD0 /* SessionMap.swift in Sources */,
 				CD7660BA2448CBDD00D825A3 /* Arrow.swift in Sources */,
 				CDAEDFCF244C80BE0086EBD0 /* BindingView.swift in Sources */,
 				CDAEDFCB244C7CF60086EBD0 /* AccelerationDataSource.swift in Sources */,
 				CD7660BB2448CBDD00D825A3 /* DoubleExtensions.swift in Sources */,
-				CD7660742448CA8800D825A3 /* ContentView.swift in Sources */,
 				CD7660BD2448CBDD00D825A3 /* TelemetryRepository.swift in Sources */,
 				CDCC5ACE244E2B6F00AECC66 /* TelemetryView.swift in Sources */,
 			);

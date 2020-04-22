@@ -9,7 +9,7 @@
 import Foundation
 import Combine
 
-class Session: Hashable
+class Session: Hashable, ObservableObject
 {
     static func == (lhs: Session, rhs: Session) -> Bool {
         return lhs.id == rhs.id
@@ -20,6 +20,11 @@ class Session: Hashable
     let id:String
     public var name:String
     public let date:Date
+    public var formattedDate:String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM-dd HH:mm:ss"
+        return formatter.string(from: date)
+    }
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(id   )

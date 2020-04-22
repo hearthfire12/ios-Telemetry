@@ -12,8 +12,12 @@ import CoreMotion
 
 extension Resolver: ResolverRegistering {
     public static func registerAllServices() {
-        register { TelemetryRepository() }
-        register { CMMotionManager() }
-//        .implements(TelemetryRepository.self)
+        register { () -> ITelemetryRepository in
+            return TelemetryRepository()
+        }
+        
+        register { () -> CMMotionManager in
+            return CMMotionManager()
+        }
     }
 }

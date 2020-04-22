@@ -9,14 +9,17 @@
 import SwiftUI
 
 struct TelemetryView: View {
+    @State private var sessionsDataSource = SessionsDataSource()
+    @State private var accelerationDataSource = AccelerationDataSource()
+    
     var body: some View {
         TabView {
-            RecordingTabView()
+            RecordingTabView(accelerationDataSource: accelerationDataSource)
                 .tabItem {
                     Image(systemName: "play.circle.fill")
                     Text("Recording")
                 }
-            MapTabView()
+            MapTabView(sessionsDataSource: sessionsDataSource)
                 .tabItem {
                     Image(systemName: "map.fill")
                     Text("Map")
